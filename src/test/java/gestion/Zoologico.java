@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Zoologico {
 	
 	public Zoologico() {}
-	
 	public Zoologico(String nom, String ubi){
 		nombre=nom;
 		ubicacion=ubi;

@@ -5,6 +5,7 @@ public class Mamifero extends Animal {
 	
 	public Mamifero() {
 	}
+	
 	public Mamifero (String nom, int ed, String hab, String gen, boolean pelaje, int pata){
 		setNombre(nom);
 		setEdad(ed);

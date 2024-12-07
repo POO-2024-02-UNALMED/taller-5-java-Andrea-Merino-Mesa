@@ -3,6 +3,7 @@ import gestion.Zona;
 public class Reptil extends Animal {
 	public Reptil() {
 	}
+	
 	public Reptil (String nom, int ed, String hab, String gen,String colorEscama, int cola){
 		setNombre(nom);
 		setEdad(ed);

@@ -66,7 +66,7 @@ public class Animal {
 	}
 	
 	public String getGenero(){
-		return habitat;
+		return genero;
 	}
 	
 	public void setGenero(String gen){

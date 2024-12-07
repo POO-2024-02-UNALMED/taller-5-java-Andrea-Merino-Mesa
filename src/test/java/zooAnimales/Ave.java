@@ -5,7 +5,6 @@ import gestion.Zona;
 public class Ave extends Animal {
 	
 	public Ave() {
-		
 	}
 	public Ave (String nom, int ed, String hab, String gen,String colorPluma){
 		setNombre(nom);

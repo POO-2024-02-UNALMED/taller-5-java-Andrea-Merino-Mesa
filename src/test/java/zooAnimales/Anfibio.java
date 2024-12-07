@@ -6,6 +6,7 @@ public class Anfibio extends Animal {
 	
 	public Anfibio() {
 	}
+	
 	public Anfibio (String nom, int ed, String hab, String gen,String piel, boolean veneno){
 		setNombre(nom);
 		setEdad(ed);

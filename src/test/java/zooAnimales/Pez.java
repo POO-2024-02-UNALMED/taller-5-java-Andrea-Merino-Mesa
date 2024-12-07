@@ -5,6 +5,7 @@ public class Pez extends Animal {
 	
 	public Pez() {
 	}
+	
 	public Pez (String nom, int ed, String hab, String gen,String colorEscama, int cantidadAleta){
 		setNombre(nom);
 		setEdad(ed);
