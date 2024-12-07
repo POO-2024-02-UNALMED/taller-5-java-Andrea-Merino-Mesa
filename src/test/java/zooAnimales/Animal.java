@@ -2,6 +2,7 @@ package zooAnimales;
 import gestion.Zona;
 
 public class Animal {
+	
 	public Animal() {
 	}
 	public Animal(String nom, int ed, String hab, String gen){

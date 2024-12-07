@@ -1,4 +1,5 @@
 package zooAnimales;
+import java.util.ArrayList;
 
 import gestion.Zona;
 
@@ -14,10 +15,10 @@ public class Anfibio extends Animal {
 		setGenero(gen);
 		colorPiel=piel;
 		venenoso=veneno;
-		listado[listado.length]=this;
-	}
-	
-	private static Anfibio[] listado;
+		listado= new ArrayList<Anfibio>();
+		}
+
+	private static ArrayList<Anfibio> listado;
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
@@ -41,12 +42,12 @@ public class Anfibio extends Animal {
 		return new Anfibio(nom,ed,"selva",gen,"negro y amarillo",false);
 	}
 	
-	public Anfibio[] getListado(){
+	public ArrayList<Anfibio> getListado(){
 		return listado;
 	}
 	
-	public void setListado(Anfibio anfibio){
-		listado[listado.length]=anfibio;
+	public void setListado(Anfibio anf){
+		listado.add(anf);
 	}
 	
 	public String getColorPiel(){
