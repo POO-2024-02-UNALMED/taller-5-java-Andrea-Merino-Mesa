@@ -1,14 +1,21 @@
 package gestion;
+import zooAnimales.Animal;
+import java.util.ArrayList;
 public class Zoologico {
+	
 	public Zoologico() {}
 	public Zoologico(String nom, String ubi){
 		nombre=nom;
 		ubicacion=ubi;
+		this.zonas= new ArrayList<Zona>();
 	}
+	
 	private String nombre;
 	private String ubicacion;
-	private Zona zonas;
+	private ArrayList<Zona> zonas;
+	
 	public void cantidadTotalAnimales(){
+		Animal.getTotalAnimales();
 		//retornar la cantidad de animales total de todas 
 		//las zonas que tengan relacion con el Zoologico
 	}
@@ -24,10 +31,10 @@ public class Zoologico {
 	public void setUbicacion(String ubi) {
 		ubicacion=ubi;
 	}
-	public Zona getZona() {
+	public ArrayList<Zona> getZona() {
 		return this.zonas;
 	}
-	public void agregarZona(Zona zona) {
-		zonas=zona;
+	public void agregarZonas(Zona zona) {
+		zonas.add(zona);
 	}
 }

@@ -18,13 +18,13 @@ public class Ave extends Animal {
 	public String movimiento(){
 		return "volar";
 	}
-	public void crearHalcon(String nom, int ed, String gen){
+	public static Ave crearHalcon(String nom, int ed, String gen){
 		++halcones;
-		Ave ave =new Ave(nom,ed,"montanas",gen,"cafe glorioso");
+		return new Ave(nom,ed,"montanas",gen,"cafe glorioso");
 	}
-	public void crearAguila(String nom, int ed, String gen){
+	public static Ave crearAguila(String nom, int ed, String gen){
 		++aguilas;
-		Ave ave =new Ave(nom,ed,"montanas",gen,"blanco y amarillo");
+		return new Ave(nom,ed,"montanas",gen,"blanco y amarillo");
 	}
 	public Ave[] getListado(){
 		return listado;

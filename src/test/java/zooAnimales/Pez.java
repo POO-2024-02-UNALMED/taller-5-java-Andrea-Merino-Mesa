@@ -20,13 +20,13 @@ public class Pez extends Animal {
 	public String movimiento(){
 		return "nadar";
 	}
-	public void crearBacalao(String nom, int ed, String gen){
+	public static Pez crearBacalao(String nom, int ed, String gen){
 		++bacalaos;
-		Pez pez =new Pez(nom,ed,"oceano",gen,"rojo",6);
+		return new Pez(nom,ed,"oceano",gen,"rojo",6);
 	}
-	public void crearSalmon(String nom, int ed, String gen){
+	public static Pez crearSalmon(String nom, int ed, String gen){
 		++salmones;
-		Pez pez =new Pez(nom,ed,"oceano",gen,"gris",6);
+		return new Pez(nom,ed,"oceano",gen,"gris",6);
 	}
 	public Pez[] getListado(){
 		return listado;

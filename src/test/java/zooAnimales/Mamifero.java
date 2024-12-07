@@ -17,13 +17,13 @@ public class Mamifero extends Animal {
 	public static int cantidadMamiferos(){
 		return leones+caballos;
 	}
-	public void crearCaballo(String nom, int ed, String gen){
+	public static Mamifero crearCaballo (String nom, int ed, String gen){
 		++caballos;
-		Mamifero mamifero =new Mamifero(nom,ed,"pradera",gen,true,4);
+		return new Mamifero(nom,ed,"pradera",gen,true,4);
 	}
-	public void crearLeon(String nom, int ed, String gen){
-		Mamifero mamifero =new Mamifero(nom,ed,"selva",gen,true,4);
+	public static Mamifero crearLeon(String nom, int ed, String gen){
 		++leones;
+		return new Mamifero(nom,ed,"selva",gen,true,4);
 	}
 	
 	public Mamifero[] getListado(){

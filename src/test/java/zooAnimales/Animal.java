@@ -20,8 +20,6 @@ public class Animal {
 	}
 	
 	public String totalPorTipo(){
-		//devolvera el siguiente formato con la cantidad de animales por cada
-		//subclase de animales
 		return "Mamiferos: "+new Mamifero().cantidadMamiferos()+"\nAves: "+new Ave().cantidadAves()+"\nReptiles: "+new Reptil().cantidadReptiles()+"\nPeces: "+new Pez().cantidadPeces()+"\nAnfibios: "+new Anfibio().cantidadAnfibios();
 			
 	}
@@ -31,6 +29,12 @@ public class Animal {
 		}
 		return "Mi nombre es "+nombre+", tengo una edad de "+edad+"habito en "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es "+zona.getNombre()+", en el"+zona.getZoo().getNombre()+".";}
 	
+	public static int getTotalAnimales(){
+		return totalAnimales;
+	}
+	public static void setTotalAnimales(int tAnimales){
+		totalAnimales=tAnimales;
+	}
 	public String getNombre(){
 		return nombre;
 	}
@@ -55,7 +59,7 @@ public class Animal {
 	public void setGenero(String gen){
 		genero=gen;
 	}
-	public Zona getZonat(){
+	public Zona getZona(){
 		return zona;
 	}
 	public void setZona(Zona zona){

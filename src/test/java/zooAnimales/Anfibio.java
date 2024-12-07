@@ -20,13 +20,13 @@ public class Anfibio extends Animal {
 	public String movimiento(){
 		return "saltar";
 	}
-	public void crearRana(String nom, int ed, String gen){
+	public static Anfibio crearRana(String nom, int ed, String gen){
 		++ranas;
-		Anfibio anfibio =new Anfibio(nom,ed,"selva",gen,"rojo",true);
+		return new Anfibio(nom,ed,"selva",gen,"rojo",true);
 	}
-	public void crearSalamandra(String nom, int ed, String gen){
+	public static Anfibio crearSalamandra(String nom, int ed, String gen){
 		++salamandras;
-		Anfibio anfibio =new Anfibio(nom,ed,"selva",gen,"negro y amarillo",false);
+		return new Anfibio(nom,ed,"selva",gen,"negro y amarillo",false);
 	}
 	public Anfibio[] getListado(){
 		return listado;

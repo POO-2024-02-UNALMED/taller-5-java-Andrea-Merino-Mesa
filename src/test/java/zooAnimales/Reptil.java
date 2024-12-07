@@ -18,13 +18,13 @@ public class Reptil extends Animal {
 	public String movimiento(){
 		return "reptar";
 	}
-	public void crearIguana(String nom, int ed, String gen){
+	public static Reptil crearIguana(String nom, int ed, String gen){
 		++iguanas;
-		Reptil reptil =new Reptil(nom,ed,"humedal",gen,"verde",3);
+		return new Reptil(nom,ed,"humedal",gen,"verde",3);
 	}
-	public void crearSerpiente(String nom, int ed, String gen){
+	public static Reptil crearSerpiente(String nom, int ed, String gen){
 		++serpientes;
-		Reptil reptil =new Reptil(nom,ed,"jungla",gen,"blanco",1);
+		return new Reptil(nom,ed,"jungla",gen,"blanco",1);
 	}
 	public Reptil[] getListado(){
 		return listado;
