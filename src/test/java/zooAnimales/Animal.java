@@ -3,7 +3,9 @@ import gestion.Zona;
 
 public class Animal {
 	
-	public Animal() {}
+	public Animal() {
+		++totalAnimales;
+	}
 	public Animal(String nom, int ed, String hab, String gen){
 		++totalAnimales;
 		nombre=nom;
@@ -38,7 +40,7 @@ public class Animal {
 	}
 	
 	public static void setTotalAnimales(int tAnimales){
-		totalAnimales=tAnimales;
+		totalAnimales+=tAnimales;
 	}
 	
 	public String getNombre(){

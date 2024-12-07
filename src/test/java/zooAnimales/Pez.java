@@ -3,8 +3,14 @@ import gestion.Zona;
 
 public class Pez extends Animal {
 	
-	public Pez() {}
+	public Pez() {
+		listado[listado.length]=this;
+	}
 	public Pez (String nom, int ed, String hab, String gen,String colorEscama, int cantidadAleta){
+		setNombre(nom);
+		setEdad(ed);
+		setHabitat(hab);
+		setGenero(gen);
 		colorEscamas=colorEscama;
 		cantidadAletas=cantidadAleta;
 		listado[listado.length]=this;
