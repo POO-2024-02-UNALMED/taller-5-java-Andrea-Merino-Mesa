@@ -32,12 +32,12 @@ public class Anfibio extends Animal {
 	}
 	
 	public static Anfibio crearRana(String nom, int ed, String gen){
-		++ranas;
+		ranas+=1;
 		return new Anfibio(nom,ed,"selva",gen,"rojo",true);
 	}
 	
 	public static Anfibio crearSalamandra(String nom, int ed, String gen){
-		++salamandras;
+		salamandras+=1;
 		return new Anfibio(nom,ed,"selva",gen,"negro y amarillo",false);
 	}
 	

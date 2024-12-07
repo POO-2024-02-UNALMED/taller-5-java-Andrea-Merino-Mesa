@@ -2,12 +2,11 @@ package zooAnimales;
 import gestion.Zona;
 
 public class Animal {
-	
 	public Animal() {
-		++totalAnimales;
+		totalAnimales+=1;
 	}
 	public Animal(String nom, int ed, String hab, String gen){
-		++totalAnimales;
+		totalAnimales+=1;
 		nombre=nom;
 		edad=ed;
 		habitat=hab;
@@ -26,14 +25,14 @@ public class Animal {
 	}
 	
 	public static String totalPorTipo(){
-		return "Mamiferos: "+new Mamifero().cantidadMamiferos()+"\nAves: "+new Ave().cantidadAves()+"\nReptiles: "+new Reptil().cantidadReptiles()+"\nPeces: "+new Pez().cantidadPeces()+"\nAnfibios: "+new Anfibio().cantidadAnfibios();	
+		return "Mamiferos: "+new Mamifero().cantidadMamiferos()+"\n"+"Aves: "+new Ave().cantidadAves()+"\n"+"Reptiles: "+new Reptil().cantidadReptiles()+"\n"+"Peces: "+new Pez().cantidadPeces()+"\n"+"Anfibios: "+new Anfibio().cantidadAnfibios();	
 	}
 	
 	public String toString(){
 		if(zona==null || zona.getZoo()==null) {
-			return "Mi nombre es "+nombre+", tengo una edad de "+edad+"habito en "+habitat+" y mi genero es "+genero;
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+",habito en "+habitat+" y mi genero es "+genero;
 		}
-		return "Mi nombre es "+nombre+", tengo una edad de "+edad+"habito en "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es "+zona.getNombre()+", en el"+zona.getZoo().getNombre()+".";}
+		return "Mi nombre es "+nombre+", tengo una edad de "+edad+",habito en "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es "+zona.getNombre()+", en el"+zona.getZoo().getNombre()+".";}
 	
 	public static int getTotalAnimales(){
 		return totalAnimales;

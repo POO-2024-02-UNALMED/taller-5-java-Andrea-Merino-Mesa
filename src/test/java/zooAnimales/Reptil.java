@@ -29,12 +29,12 @@ public class Reptil extends Animal {
 	}
 	
 	public static Reptil crearIguana(String nom, int ed, String gen){
-		++iguanas;
+		iguanas+=1;
 		return new Reptil(nom,ed,"humedal",gen,"verde",3);
 	}
 	
 	public static Reptil crearSerpiente(String nom, int ed, String gen){
-		++serpientes;
+		serpientes+=1;
 		return new Reptil(nom,ed,"jungla",gen,"blanco",1);
 	}
 	

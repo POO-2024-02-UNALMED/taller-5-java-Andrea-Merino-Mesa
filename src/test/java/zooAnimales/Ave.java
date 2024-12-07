@@ -30,12 +30,12 @@ public class Ave extends Animal {
 	}
 	
 	public static Ave crearHalcon(String nom, int ed, String gen){
-		++halcones;
+		halcones+=1;
 		return new Ave(nom,ed,"montanas",gen,"cafe glorioso");
 	}
 	
 	public static Ave crearAguila(String nom, int ed, String gen){
-		++aguilas;
+		aguilas+=1;
 		return new Ave(nom,ed,"montanas",gen,"blanco y amarillo");
 	}
 	
