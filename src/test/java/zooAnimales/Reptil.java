@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import gestion.Zona;
 public class Reptil extends Animal {
 	public Reptil() {
+		listado.add(this);
 	}
 	
 	public Reptil (String nom, int ed, String hab, String gen,String colorEscama, int cola){
@@ -13,7 +14,7 @@ public class Reptil extends Animal {
 		setGenero(gen);
 		colorEscamas=colorEscama;
 		largoCola=cola;
-		listado= new ArrayList<Reptil>();
+		listado.add(this);
 		}
 
 	private static ArrayList<Reptil> listado;

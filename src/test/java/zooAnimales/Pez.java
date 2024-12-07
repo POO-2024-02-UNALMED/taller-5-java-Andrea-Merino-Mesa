@@ -14,7 +14,7 @@ public class Pez extends Animal {
 		setGenero(gen);
 		colorEscamas=colorEscama;
 		cantidadAletas=cantidadAleta;
-		listado= new ArrayList<Pez>();
+		listado.add(this);
 	}
 
 	private static ArrayList<Pez> listado;

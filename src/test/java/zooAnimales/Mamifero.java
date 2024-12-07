@@ -6,6 +6,7 @@ import gestion.Zona;
 public class Mamifero extends Animal {
 	
 	public Mamifero() {
+		listado.add(this);
 	}
 	
 	public Mamifero (String nom, int ed, String hab, String gen, boolean pelaje, int pata){
@@ -15,7 +16,7 @@ public class Mamifero extends Animal {
 		setGenero(gen);
 		patas=pata;
 		this.pelaje=pelaje;
-		listado= new ArrayList<Mamifero>();
+		listado.add(this);
 		}
 
 	private static ArrayList<Mamifero> listado;
