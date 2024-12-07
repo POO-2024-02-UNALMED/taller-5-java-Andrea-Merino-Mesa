@@ -3,7 +3,6 @@ import gestion.Zona;
 
 public class Animal {
 	public Animal() {
-		totalAnimales+=1;
 	}
 	public Animal(String nom, int ed, String hab, String gen){
 		totalAnimales+=1;

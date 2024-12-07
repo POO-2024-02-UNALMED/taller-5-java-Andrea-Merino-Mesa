@@ -4,7 +4,6 @@ import gestion.Zona;
 public class Pez extends Animal {
 	
 	public Pez() {
-		listado[listado.length]=this;
 	}
 	public Pez (String nom, int ed, String hab, String gen,String colorEscama, int cantidadAleta){
 		setNombre(nom);

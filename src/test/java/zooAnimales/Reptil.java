@@ -2,7 +2,6 @@ package zooAnimales;
 import gestion.Zona;
 public class Reptil extends Animal {
 	public Reptil() {
-		listado[listado.length]=this;
 	}
 	public Reptil (String nom, int ed, String hab, String gen,String colorEscama, int cola){
 		setNombre(nom);
