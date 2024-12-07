@@ -24,7 +24,7 @@ public class Pez extends Animal {
 	private String colorEscamas;
 	
 	public static int cantidadPeces(){
-		return bacalaos+salmones;
+		return listado.size();
 	}
 	
 	public String movimiento(){

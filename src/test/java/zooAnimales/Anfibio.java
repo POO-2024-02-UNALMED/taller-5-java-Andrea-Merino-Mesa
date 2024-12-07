@@ -25,7 +25,7 @@ public class Anfibio extends Animal {
 	private boolean venenoso;
 	
 	public int cantidadAnfibios(){
-		return ranas+salamandras;
+		return listado.size();
 	}
 	
 	public String movimiento(){

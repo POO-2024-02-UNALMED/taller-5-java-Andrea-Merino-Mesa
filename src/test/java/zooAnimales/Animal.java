@@ -2,7 +2,6 @@ package zooAnimales;
 import gestion.Zona;
 
 public class Animal {
-	
 	public Animal() {
 	}
 	public Animal(String nom, int ed, String hab, String gen){
@@ -19,7 +18,7 @@ public class Animal {
 	private String habitat;
 	private String genero;
 	private Zona zona;
-	
+
 	public String movimiento(){
 		return "desplazarse";
 	}
@@ -29,10 +28,10 @@ public class Animal {
 	}
 	
 	public String toString(){
-		if(zona==null || zona.getZoo()==null) {
-			return "Mi nombre es "+nombre+", tengo una edad de "+edad+",habito en "+habitat+" y mi genero es "+genero;
+		if(this.zona==null || this.zona.getZoo()==null) {
+			return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+",habito en "+this.habitat+" y mi genero es "+this.genero;
 		}
-		return "Mi nombre es "+nombre+", tengo una edad de "+edad+",habito en "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es "+zona.getNombre()+", en el"+zona.getZoo().getNombre()+".";}
+		return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+",habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona.getNombre()+", en el"+this.zona.getZoo().getNombre()+".";}
 	
 	public static int getTotalAnimales(){
 		return totalAnimales;

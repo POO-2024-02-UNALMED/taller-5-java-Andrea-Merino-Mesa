@@ -17,13 +17,13 @@ public class Ave extends Animal {
 		listado= new ArrayList<Ave>();
 		}
 
-		private static ArrayList<Ave> listado;
+	private static ArrayList<Ave> listado;
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
 	
 	public static int cantidadAves(){
-		return aguilas+halcones;
+		return listado.size();
 	}
 	
 	public String movimiento(){

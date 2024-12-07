@@ -5,7 +5,6 @@ import zooAnimales.Animal;
 public class Zona {
 	
 	public Zona() {}
-	
 	public Zona(String nom, Zoologico zoo) {
 		nombre=nom;
 		this.zoo=zoo;

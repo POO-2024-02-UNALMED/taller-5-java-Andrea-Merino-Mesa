@@ -23,7 +23,7 @@ public class Reptil extends Animal {
 	private String colorEscamas;
 	
 	public static int cantidadReptiles(){
-		return serpientes+iguanas;
+		return listado.size();
 	}
 	
 	public String movimiento(){
