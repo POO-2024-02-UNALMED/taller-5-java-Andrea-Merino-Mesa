@@ -4,7 +4,7 @@ import gestion.Zona;
 
 public class Pez extends Animal {
 	public Pez() {}
-	public Pez (String nom, int ed, String hab, String gen, Zona zona,String colorEscama, int cantidadAleta){
+	public Pez (String nom, int ed, String hab, String gen,String colorEscama, int cantidadAleta){
 		colorEscamas=colorEscama;
 		cantidadAletas=cantidadAleta;
 		listado[listado.length]=this;
@@ -20,13 +20,13 @@ public class Pez extends Animal {
 	public String movimiento(){
 		return "nadar";
 	}
-	public void crearBacalao(String nom, int ed, String gen, Zona zona){
+	public void crearBacalao(String nom, int ed, String gen){
 		++bacalaos;
-		Pez pez =new Pez(nom,ed,"oceano",gen,zona,"rojo",6);
+		Pez pez =new Pez(nom,ed,"oceano",gen,"rojo",6);
 	}
-	public void crearSalmon(String nom, int ed, String gen, Zona zona){
+	public void crearSalmon(String nom, int ed, String gen){
 		++salmones;
-		Pez pez =new Pez(nom,ed,"oceano",gen,zona,"gris",6);
+		Pez pez =new Pez(nom,ed,"oceano",gen,"gris",6);
 	}
 	public Pez[] getListado(){
 		return listado;

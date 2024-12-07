@@ -4,7 +4,7 @@ import gestion.Zona;
 
 public class Ave extends Animal {
 	public Ave() {}
-	public Ave (String nom, int ed, String hab, String gen, Zona zona,String colorPluma){
+	public Ave (String nom, int ed, String hab, String gen,String colorPluma){
 		colorPlumas=colorPluma;
 		listado[listado.length]=this;
 	}
@@ -18,13 +18,13 @@ public class Ave extends Animal {
 	public String movimiento(){
 		return "volar";
 	}
-	public void crearHalcon(String nom, int ed, String gen, Zona zona){
+	public void crearHalcon(String nom, int ed, String gen){
 		++halcones;
-		Ave ave =new Ave(nom,ed,"montañas",gen,zona,"café glorioso");
+		Ave ave =new Ave(nom,ed,"montanas",gen,"cafe glorioso");
 	}
-	public void crearAguila(String nom, int ed, String gen, Zona zona){
+	public void crearAguila(String nom, int ed, String gen){
 		++aguilas;
-		Ave ave =new Ave(nom,ed,"montañas",gen,zona,"blanco y amarillo");
+		Ave ave =new Ave(nom,ed,"montanas",gen,"blanco y amarillo");
 	}
 	public Ave[] getListado(){
 		return listado;

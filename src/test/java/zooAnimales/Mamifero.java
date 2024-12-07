@@ -4,7 +4,7 @@ import gestion.Zona;
 
 public class Mamifero extends Animal {
 	public Mamifero() {}
-	public Mamifero (String nom, int ed, String hab, String gen, Zona zona,boolean pelaje, int pata){
+	public Mamifero (String nom, int ed, String hab, String gen, boolean pelaje, int pata){
 		patas=pata;
 		this.pelaje=pelaje;
 		listado[listado.length]=this;
@@ -17,12 +17,12 @@ public class Mamifero extends Animal {
 	public static int cantidadMamiferos(){
 		return leones+caballos;
 	}
-	public void crearCaballo(String nom, int ed, String gen, Zona zona){
+	public void crearCaballo(String nom, int ed, String gen){
 		++caballos;
-		Mamifero mamifero =new Mamifero(nom,ed,"pradera",gen,zona,true,4);
+		Mamifero mamifero =new Mamifero(nom,ed,"pradera",gen,true,4);
 	}
-	public void crearLeon(String nom, int ed, String gen, Zona zona){
-		Mamifero mamifero =new Mamifero(nom,ed,"selva",gen,zona,true,4);
+	public void crearLeon(String nom, int ed, String gen){
+		Mamifero mamifero =new Mamifero(nom,ed,"selva",gen,true,4);
 		++leones;
 	}
 	
@@ -38,10 +38,10 @@ public class Mamifero extends Animal {
 	public void setPatas(int patas){
 		this.patas=patas;
 	}
-	public boolean getPelaje(){
+	public boolean isPelaje(){
 		return pelaje;
 	}
-	public void setHabitat(boolean pelaje){
+	public void setPelaje(boolean pelaje){
 		this.pelaje=pelaje;
 	}
 	

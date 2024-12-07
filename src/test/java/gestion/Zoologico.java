@@ -1,16 +1,15 @@
 package gestion;
 public class Zoologico {
 	public Zoologico() {}
-	public Zoologico(String nom, String ubi, Zona zona){
+	public Zoologico(String nom, String ubi){
 		nombre=nom;
 		ubicacion=ubi;
-		zonas=zona;
 	}
 	private String nombre;
 	private String ubicacion;
 	private Zona zonas;
 	public void cantidadTotalAnimales(){
-		//retornar ́a la cantidad de animales total de todas 
+		//retornar la cantidad de animales total de todas 
 		//las zonas que tengan relacion con el Zoologico
 	}
 	public String getNombre() {
@@ -25,10 +24,10 @@ public class Zoologico {
 	public void setUbicacion(String ubi) {
 		ubicacion=ubi;
 	}
-	public Zona getZonas() {
+	public Zona getZona() {
 		return this.zonas;
 	}
-	public void agregarZonas(Zona zona) {
+	public void agregarZona(Zona zona) {
 		zonas=zona;
 	}
 }

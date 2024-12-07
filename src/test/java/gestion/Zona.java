@@ -3,17 +3,18 @@ import zooAnimales.Animal;
 import zooAnimales.Ave;
 public class Zona {
 	public Zona() {}
-	public Zona(String nom, Zoologico zoo, Animal animal) {
+	public Zona(String nom, Zoologico zoo) {
 		nombre=nom;
 		this.zoo=zoo;
-		animales[animales.length]=animal;
 	}
 	private String nombre;
 	private Zoologico zoo;
 	private Animal [] animales;
 	
 	public void Animales(){}
-	public void cantidadAnimales(){}
+	public void cantidadAnimales(){
+		//No se
+	}
 	public Zoologico getZoo() {
 		return this.zoo;
 	}

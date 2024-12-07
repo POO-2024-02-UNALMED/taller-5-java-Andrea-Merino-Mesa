@@ -2,7 +2,7 @@ package zooAnimales;
 import gestion.Zona;
 public class Reptil extends Animal {
 	public Reptil() {}
-	public Reptil (String nom, int ed, String hab, String gen, Zona zona, String colorEscama, int cola){
+	public Reptil (String nom, int ed, String hab, String gen,String colorEscama, int cola){
 		colorEscamas=colorEscama;
 		largoCola=cola;
 		listado[listado.length]=this;
@@ -18,13 +18,13 @@ public class Reptil extends Animal {
 	public String movimiento(){
 		return "reptar";
 	}
-	public void crearIguana(String nom, int ed, String gen, Zona zona){
+	public void crearIguana(String nom, int ed, String gen){
 		++iguanas;
-		Reptil reptil =new Reptil(nom,ed,"humedal",gen,zona,"verde",3);
+		Reptil reptil =new Reptil(nom,ed,"humedal",gen,"verde",3);
 	}
-	public void crearSerpiente(String nom, int ed, String gen, Zona zona){
+	public void crearSerpiente(String nom, int ed, String gen){
 		++serpientes;
-		Reptil reptil =new Reptil(nom,ed,"jungla",gen,zona,"blanco",1);
+		Reptil reptil =new Reptil(nom,ed,"jungla",gen,"blanco",1);
 	}
 	public Reptil[] getListado(){
 		return listado;

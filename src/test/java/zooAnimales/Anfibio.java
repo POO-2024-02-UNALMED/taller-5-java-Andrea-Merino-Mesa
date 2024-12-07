@@ -4,7 +4,7 @@ import gestion.Zona;
 
 public class Anfibio extends Animal {
 	public Anfibio() {}
-	public Anfibio (String nom, int ed, String hab, String gen, Zona zona, String piel, boolean veneno){
+	public Anfibio (String nom, int ed, String hab, String gen,String piel, boolean veneno){
 		colorPiel=piel;
 		venenoso=veneno;
 		listado[listado.length]=this;
@@ -14,17 +14,19 @@ public class Anfibio extends Animal {
 	public static int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
-	public void cantidadAnfibios(){}
+	public int cantidadAnfibios(){
+		return ranas+salamandras;
+	}
 	public String movimiento(){
 		return "saltar";
 	}
-	public void crearRana(String nom, int ed, String gen, Zona zona){
+	public void crearRana(String nom, int ed, String gen){
 		++ranas;
-		Anfibio anfibio =new Anfibio(nom,ed,"selva",gen,zona,"rojo",true);
+		Anfibio anfibio =new Anfibio(nom,ed,"selva",gen,"rojo",true);
 	}
-	public void crearSalamandra(String nom, int ed, String gen, Zona zona){
+	public void crearSalamandra(String nom, int ed, String gen){
 		++salamandras;
-		Anfibio anfibio =new Anfibio(nom,ed,"selva",gen,zona,"negro y amarillo",false);
+		Anfibio anfibio =new Anfibio(nom,ed,"selva",gen,"negro y amarillo",false);
 	}
 	public Anfibio[] getListado(){
 		return listado;
@@ -35,13 +37,14 @@ public class Anfibio extends Animal {
 	public String getColorPiel(){
 		return colorPiel;
 	}
-	public void ColorPiel(String colPiel){
+	public void setColorPiel(String colPiel){
 		this.colorPiel=colPiel;
 	}
-	public boolean Venenoso(){
+	public boolean isVenenoso(){
 		return venenoso;
 	}
-	public void setHabitat(boolean veneno){
-		this.venenoso=veneno;
+	public void setVenenoso(boolean veneno){
+		venenoso=veneno;;
 	}
+	
 }

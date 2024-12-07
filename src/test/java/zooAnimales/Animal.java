@@ -2,13 +2,12 @@ package zooAnimales;
 import gestion.Zona;
 public class Animal {
 	public Animal() {}
-	public Animal(String nom, int ed, String hab, String gen, Zona zona){
+	public Animal(String nom, int ed, String hab, String gen){
 		++totalAnimales;
 		nombre=nom;
 		edad=ed;
 		habitat=hab;
 		genero=gen;
-		this.zona=zona;
 	}
 	private static int totalAnimales;
 	private String nombre;
@@ -23,7 +22,7 @@ public class Animal {
 	public String totalPorTipo(){
 		//devolvera el siguiente formato con la cantidad de animales por cada
 		//subclase de animales
-		return "Mamíferos: "+"\nAves: "+"\nReptiles: "+"\nPeces: "+"\nAnfibios: ";
+		return "Mamiferos: "+new Mamifero().cantidadMamiferos()+"\nAves: "+new Ave().cantidadAves()+"\nReptiles: "+new Reptil().cantidadReptiles()+"\nPeces: "+new Pez().cantidadPeces()+"\nAnfibios: "+new Anfibio().cantidadAnfibios();
 			
 	}
 	public String toString(){
