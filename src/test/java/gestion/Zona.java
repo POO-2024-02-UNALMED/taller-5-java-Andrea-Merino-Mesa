@@ -1,15 +1,14 @@
 package gestion;
 import java.util.ArrayList;
 import zooAnimales.Animal;
-
 public class Zona {
 	
 	public Zona() {}
-	
+
+	{this.animales= new ArrayList<Animal>();}
 	public Zona(String nom, Zoologico zoo) {
 		nombre=nom;
 		this.zoo=zoo;
-		this.animales= new ArrayList<Animal>();
 	}
 	
 	private String nombre;

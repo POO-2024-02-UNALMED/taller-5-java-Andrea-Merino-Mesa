@@ -7,15 +7,15 @@ import gestion.Zona;
 public class Ave extends Animal {
 	
 	public Ave() {
-		listado.add(this);
 	}
+	static {listado= new ArrayList<Ave>();}
+	{listado.add(this);}
 	public Ave (String nom, int ed, String hab, String gen,String colorPluma){
 		setNombre(nom);
 		setEdad(ed);
 		setHabitat(hab);
 		setGenero(gen);
 		colorPlumas=colorPluma;
-		listado.add(this);
 		}
 
 	private static ArrayList<Ave> listado;

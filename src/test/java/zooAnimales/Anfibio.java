@@ -6,9 +6,9 @@ import gestion.Zona;
 public class Anfibio extends Animal {
 	
 	public Anfibio() {
-		listado.add(this);
 	}
-	
+	static {listado= new ArrayList<Anfibio>();}
+	{listado.add(this);}
 	public Anfibio (String nom, int ed, String hab, String gen,String piel, boolean veneno){
 		setNombre(nom);
 		setEdad(ed);
