@@ -6,6 +6,7 @@ public class Pez extends Animal {
 	
 	public Pez() {
 	}
+
 	static {listado= new ArrayList<Pez>();}
 	{listado.add(this);}
 	public Pez (String nom, int ed, String hab, String gen,String colorEscama, int cantidadAleta){
@@ -41,11 +42,11 @@ public class Pez extends Animal {
 		return new Pez(nom,ed,"oceano",gen,"gris",6);
 	}
 	
-	public ArrayList<Pez> getListado(){
+	public static ArrayList<Pez> getListado(){
 		return listado;
 	}
 	
-	public void setListado(Pez pez){
+	public static void setListado(Pez pez){
 		listado.add(pez);
 	}
 	

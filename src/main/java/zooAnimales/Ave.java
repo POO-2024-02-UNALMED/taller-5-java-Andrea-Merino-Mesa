@@ -1,7 +1,6 @@
 package zooAnimales;
 
 import java.util.ArrayList;
-
 import gestion.Zona;
 
 public class Ave extends Animal {
@@ -41,11 +40,11 @@ public class Ave extends Animal {
 		return new Ave(nom,ed,"montanas",gen,"blanco y amarillo");
 	}
 	
-	public ArrayList<Ave> getListado(){
+	public static ArrayList<Ave> getListado(){
 		return listado;
 	}
 	
-	public void setListado(Ave ave){
+	public static  void setListado(Ave ave){
 		listado.add(ave);
 	}
 	

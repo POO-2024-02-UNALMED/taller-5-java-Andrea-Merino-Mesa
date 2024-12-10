@@ -1,7 +1,7 @@
 package zooAnimales;
 import java.util.ArrayList;
-
 import gestion.Zona;
+
 public class Reptil extends Animal {
 	public Reptil() {
 	}
@@ -40,11 +40,11 @@ public class Reptil extends Animal {
 		return new Reptil(nom,ed,"jungla",gen,"blanco",1);
 	}
 	
-	public ArrayList<Reptil> getListado(){
+	public static ArrayList<Reptil> getListado(){
 		return listado;
 	}
 	
-	public void setListado(Reptil rep){
+	public static void setListado(Reptil rep){
 		listado.add(rep);
 	}
 	public int getLargoCola(){
