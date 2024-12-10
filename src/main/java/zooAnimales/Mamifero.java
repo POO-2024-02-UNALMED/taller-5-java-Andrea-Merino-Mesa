@@ -1,5 +1,6 @@
 package zooAnimales;
 import java.util.ArrayList;
+
 import gestion.Zona;
 
 public class Mamifero extends Animal {
@@ -37,11 +38,11 @@ public class Mamifero extends Animal {
 		return new Mamifero(nom,ed,"selva",gen,true,4);
 	}
 	
-	public static ArrayList<Mamifero> getListado(){
+	public ArrayList<Mamifero> getListado(){
 		return listado;
 	}
 	
-	public static void setListado(Mamifero mam){
+	public void setListado(Mamifero mam){
 		listado.add(mam);
 	}
 	

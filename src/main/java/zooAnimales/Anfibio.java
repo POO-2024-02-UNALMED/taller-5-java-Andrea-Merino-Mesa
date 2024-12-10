@@ -1,5 +1,6 @@
 package zooAnimales;
 import java.util.ArrayList;
+
 import gestion.Zona;
 
 public class Anfibio extends Animal {
@@ -42,11 +43,11 @@ public class Anfibio extends Animal {
 		return new Anfibio(nom,ed,"selva",gen,"negro y amarillo",false);
 	}
 	
-	public static ArrayList<Anfibio> getListado(){
+	public ArrayList<Anfibio> getListado(){
 		return listado;
 	}
 	
-	public static void setListado(Anfibio anf){
+	public void setListado(Anfibio anf){
 		listado.add(anf);
 	}
 	
